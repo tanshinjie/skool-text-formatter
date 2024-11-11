@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Skool Text Formatter",
+  "version": "0.1.0",
+  "description": "Format your text when you are posting on Skool",
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://www.skool.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
